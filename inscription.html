@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulaire d'Inscription — FormaPro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <header>
+    <nav>
+      <a href="index.html" class="nav-logo"><div class="logo-icon">🎓</div>Forma<span>Pro</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#formations">Formations</a></li>
+        <li><a href="inscription.html" class="active nav-cta">S'inscrire</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section class="insc-hero">
+      <div class="container">
+        <a href="index.html" class="back-btn" style="justify-content:center;display:inline-flex;margin-bottom:20px;">← Retour à l'accueil</a>
+        <h1>Formulaire d'Inscription</h1>
+        <p>Remplissez le formulaire ci-dessous pour rejoindre la formation de votre choix.<br>L'inscription est entièrement gratuite.</p>
+      </div>
+    </section>
+
+    
+    <section class="insc-section">
+      <div class="container">
+        <div class="insc-layout">
+
+          
+          <div class="form-card">
+            <h2 class="form-title">📋 Votre inscription</h2>
+
+            <form id="inscriptionForm" action="#" method="post" novalidate>
+
+              <!-- Informations personnelles -->
+              <p class="form-divider">👤 Informations personnelles</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="prenom">Prénom <span class="req">*</span></label>
+                  <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+                </div>
+                <div class="form-group">
+                  <label for="nom">Nom <span class="req">*</span></label>
+                  <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Adresse e-mail <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="exemple@email.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="+216 XX XXX XXX" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="dateNaissance">Date de naissance</label>
+                  <input type="date" id="dateNaissance" name="dateNaissance" />
+                </div>
+                <div class="form-group">
+                  <label for="genre">Genre</label>
+                  <select id="genre" name="genre">
+                    <option value="">-- Sélectionner --</option>
+                    <option value="homme">Homme</option>
+                    <option value="femme">Femme</option>
+                    <option value="autre">Autre</option>
+                  </select>
+                </div>
+              </div>
+
+              
+              <p class="form-divider">🎓 Formation souhaitée</p>
+
+              <div class="form-group">
+                <label for="formation">Formation choisie <span class="req">*</span></label>
+                <select id="formation" name="formation" required>
+                  <option value="">-- Choisissez votre formation --</option>
+                  <option value="ia">🤖 Intelligence Artificielle</option>
+                  <option value="datascience">📊 Data Science</option>
+                  <option value="web">💻 Développement Web</option>
+                  <option value="cyber">🔒 Cybersécurité</option>
+                  <option value="marketing">📱 Marketing Digital</option>
+                  <option value="cloud">☁️ Cloud Computing</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="niveau">Votre niveau actuel <span class="req">*</span></label>
+                  <select id="niveau" name="niveau" required>
+                    <option value="">-- Sélectionner --</option>
+                    <option value="debutant">Débutant complet</option>
+                    <option value="elementaire">Élémentaire</option>
+                    <option value="intermediaire">Intermédiaire</option>
+                    <option value="avance">Avancé</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="disponibilite">Disponibilité</label>
+                  <select id="disponibilite" name="disponibilite">
+                    <option value="">-- Sélectionner --</option>
+                    <option value="temps-plein">Temps plein</option>
+                    <option value="temps-partiel">Temps partiel</option>
+                    <option value="weekend">Week-end uniquement</option>
+                    <option value="soir">Soirées uniquement</option>
+                  </select>
+                </div>
+              </div>
+
+              
+              <p class="form-divider">🏫 Parcours académique</p>
+
+              <div class="form-group">
+                <label for="etablissement">Établissement / Université</label>
+                <input type="text" id="etablissement" name="etablissement" placeholder="Nom de votre établissement" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="diplome">Diplôme le plus élevé</label>
+                  <select id="diplome" name="diplome">
+                    <option value="">-- Sélectionner --</option>
+                    <option value="bac">Baccalauréat</option>
+                    <option value="licence">Licence (Bac+3)</option>
+                    <option value="master">Master (Bac+5)</option>
+                    <option value="doctorat">Doctorat</option>
+                    <option value="autre">Autre</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="anneeEtude">Année d'étude actuelle</label>
+                  <select id="anneeEtude" name="anneeEtude">
+                    <option value="">-- Sélectionner --</option>
+                    <option value="l1">Licence 1</option>
+                    <option value="l2">Licence 2</option>
+                    <option value="l3">Licence 3</option>
+                    <option value="m1">Master 1</option>
+                    <option value="m2">Master 2</option>
+                    <option value="pro">Professionnel</option>
+                  </select>
+                </div>
+              </div>
+
+              
+              <p class="form-divider">✍️ Motivation</p>
+
+              <div class="form-group">
+                <label for="objectif">Votre objectif professionnel</label>
+                <textarea id="objectif" name="objectif" rows="3" placeholder="Décrivez brièvement votre objectif et pourquoi vous souhaitez suivre cette formation..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="comment">Comment avez-vous connu FormaPro ?</label>
+                <select id="comment" name="comment">
+                  <option value="">-- Sélectionner --</option>
+                  <option value="bouche">Bouche à oreille</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="linkedin">LinkedIn</option>
+                  <option value="google">Recherche Google</option>
+                  <option value="universite">Mon université</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+
+             
+              <div class="form-group" style="display:flex;align-items:flex-start;gap:10px;margin-top:8px;">
+                <input type="checkbox" id="cgu" name="cgu" required style="width:18px;height:18px;margin-top:3px;flex-shrink:0;accent-color:var(--accent);" />
+                <label for="cgu" style="font-size:0.85rem;color:var(--text-light);cursor:pointer;">
+                  J'accepte les <a href="#" style="color:var(--secondary);font-weight:600;">conditions générales d'utilisation</a> et la <a href="#" style="color:var(--secondary);font-weight:600;">politique de confidentialité</a>. <span class="req">*</span>
+                </label>
+              </div>
+
+              
+              <button type="submit" class="btn-submit" id="submitBtn">
+                🚀 Confirmer mon inscription
+              </button>
+
+            </form>
+
+            
+            <div id="successMsg" style="display:none;text-align:center;padding:40px 20px;background:#f0fdf4;border-radius:var(--radius);border:1px solid #86efac;margin-top:20px;">
+              <div style="font-size:3rem;margin-bottom:16px;">🎉</div>
+              <h3 style="font-family:var(--font-head);font-size:1.4rem;color:#166534;margin-bottom:8px;">Inscription réussie !</h3>
+              <p style="color:#15803d;font-size:0.95rem;">Votre demande a bien été enregistrée. Vous recevrez un e-mail de confirmation dans les 24h.</p>
+              <a href="index.html" class="btn-primary" style="display:inline-flex;margin-top:20px;">← Retour à l'accueil</a>
+            </div>
+          </div>
+
+          
+          <aside>
+            
+            <div class="insc-info-card">
+              <h3>📍 Processus d'inscription</h3>
+              <ul class="step-list">
+                <li class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-text"><strong>Remplissez le formulaire</strong><span>Complétez toutes les informations requises</span></div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-text"><strong>Confirmation par e-mail</strong><span>Recevez votre confirmation sous 24h</span></div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-text"><strong>Accès à la plateforme</strong><span>Connectez-vous et commencez à apprendre</span></div>
+                </li>
+                <li class="step-item">
+                  <div class="step-num">4</div>
+                  <div class="step-text"><strong>Obtenez votre certificat</strong><span>Terminez la formation et recevez votre diplôme</span></div>
+                </li>
+              </ul>
+            </div>
+
+            
+            <div class="insc-info-card">
+              <h3>✅ Nos garanties</h3>
+              <ul style="display:flex;flex-direction:column;gap:10px;">
+                <li style="display:flex;align-items:center;gap:10px;font-size:0.88rem;"><span style="color:#10b981;font-size:1.1rem;">✔</span> Inscription 100% gratuite</li>
+                <li style="display:flex;align-items:center;gap:10px;font-size:0.88rem;"><span style="color:#10b981;font-size:1.1rem;">✔</span> Annulation possible à tout moment</li>
+                <li style="display:flex;align-items:center;gap:10px;font-size:0.88rem;"><span style="color:#10b981;font-size:1.1rem;">✔</span> Données personnelles protégées</li>
+                <li style="display:flex;align-items:center;gap:10px;font-size:0.88rem;"><span style="color:#10b981;font-size:1.1rem;">✔</span> Certificat reconnu et officiel</li>
+                <li style="display:flex;align-items:center;gap:10px;font-size:0.88rem;"><span style="color:#10b981;font-size:1.1rem;">✔</span> Accompagnement personnalisé</li>
+              </ul>
+            </div>
+
+            
+            <div class="insc-info-card" style="background:linear-gradient(135deg,var(--dark),#0f2547);color:white;">
+              <h3 style="color:white;">💬 Besoin d'aide ?</h3>
+              <p style="font-size:0.88rem;color:rgba(255,255,255,0.7);margin-bottom:16px;">Notre équipe est disponible pour répondre à toutes vos questions.</p>
+              <a href="mailto:contact@formaproject.tn" style="display:flex;align-items:center;gap:8px;font-size:0.88rem;color:var(--accent);">📧 contact@formaproject.tn</a>
+              <a href="tel:+21600000000" style="display:flex;align-items:center;gap:8px;font-size:0.88rem;color:var(--accent);margin-top:8px;">📞 +216 XX XXX XXX</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:12px;display:inline-flex;"><div class="logo-icon">🎓</div>Forma<span>Pro</span></a>
+          <p>Plateforme universitaire de formation en ligne aux métiers du numérique.</p>
+        </div>
+        <div class="footer-col"><h4>Formations</h4><ul>
+          <li><a href="ia.html">Intelligence Artificielle</a></li>
+          <li><a href="datascience.html">Data Science</a></li>
+          <li><a href="web.html">Développement Web</a></li>
+          <li><a href="cyber.html">Cybersécurité</a></li>
+          <li><a href="marketing.html">Marketing Digital</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Navigation</h4><ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="inscription.html">S'inscrire</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul>
+          <li><a href="#">📧 contact@formaproject.tn</a></li>
+          <li><a href="#">📍 Tunis, Tunisie</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2024 FormaPro — Projet Universitaire</span><span>Fait avec ❤️</span></div>
+    </div>
+  </footer>
+
+  <script>
+    
+    document.getElementById('navToggle').addEventListener('click', () =>
+      document.getElementById('navLinks').classList.toggle('open'));
+
+    
+    const params = new URLSearchParams(window.location.search);
+    const formationParam = params.get('formation');
+    if (formationParam) {
+      const select = document.getElementById('formation');
+      if (select) select.value = formationParam;
+    }
+
+    
+    document.getElementById('inscriptionForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const prenom  = document.getElementById('prenom').value.trim();
+      const nom     = document.getElementById('nom').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const form    = document.getElementById('formation').value;
+      const niveau  = document.getElementById('niveau').value;
+      const cgu     = document.getElementById('cgu').checked;
+
+      if (!prenom || !nom || !email || !form || !niveau || !cgu) {
+        alert('⚠️ Veuillez remplir tous les champs obligatoires (marqués *).');
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('⚠️ Veuillez entrer une adresse e-mail valide.');
+        return;
+      }
+
+      
+      document.getElementById('inscriptionForm').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

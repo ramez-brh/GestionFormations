@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FormaPro — Plateforme de Gestion des Formations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ 
+  <header>
+    <nav>
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🎓</div>
+        Forma<span>Pro</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="#formations">Formations</a></li>
+        <li><a href="#pourquoi">À propos</a></li>
+        <li><a href="inscription.html" class="nav-cta">S'inscrire</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <p class="hero-badge animate">🚀 Plateforme Universitaire 2024–2025</p>
+
+        <h1 class="animate delay-1">
+          Formez-vous aux métiers<br>
+          <span class="gradient-text">du numérique de demain</span>
+        </h1>
+
+        <p class="animate delay-2">
+          Découvrez nos formations certifiantes en Intelligence Artificielle,
+          Data Science, Développement Web, Cybersécurité et bien plus encore.
+        </p>
+
+        <div class="hero-btns animate delay-3">
+          <a href="#formations" class="btn-primary">🎯 Voir les formations</a>
+          <a href="inscription.html" class="btn-secondary">📋 S'inscrire maintenant</a>
+        </div>
+
+        <!-- Statistiques -->
+        <div class="hero-stats animate delay-4">
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Étudiants formés</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Formations disponibles</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">95%</div>
+            <div class="stat-label">Taux de satisfaction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Certifié &amp; reconnu</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <section id="formations">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Nos programmes</span>
+          <h2>Choisissez votre formation</h2>
+          <p>Des cursus conçus par des experts pour vous préparer aux défis du marché.</p>
+        </div>
+
+        <div class="formations-grid">
+
+          
+          <article class="card animate">
+            <div class="card-header">
+              <div class="card-icon icon-ia">🤖</div>
+              <span class="card-badge">Avancé</span>
+              <h3>Intelligence Artificielle</h3>
+              <p>Maîtrisez le Machine Learning, le Deep Learning et les LLMs. Construisez des systèmes intelligents prêts pour l'industrie.</p>
+            </div>
+            <div class="card-meta">
+              <span class="meta-item"><span class="meta-icon">⏱</span> 6 mois</span>
+              <span class="meta-item"><span class="meta-icon">📚</span> 12 modules</span>
+              <span class="meta-item"><span class="meta-icon">🏆</span> Certificat</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">Gratuit</span>
+              <a href="ia.html" class="btn-card">Découvrir →</a>
+            </div>
+          </article>
+
+          
+          <article class="card animate delay-1">
+            <div class="card-header">
+              <div class="card-icon icon-data">📊</div>
+              <span class="card-badge">Intermédiaire</span>
+              <h3>Data Science</h3>
+              <p>Analyse, visualisation et interprétation des données massives. De Python à Tableau en passant par SQL et R.</p>
+            </div>
+            <div class="card-meta">
+              <span class="meta-item"><span class="meta-icon">⏱</span> 5 mois</span>
+              <span class="meta-item"><span class="meta-icon">📚</span> 10 modules</span>
+              <span class="meta-item"><span class="meta-icon">🏆</span> Certificat</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">Gratuit</span>
+              <a href="datascience.html" class="btn-card">Découvrir →</a>
+            </div>
+          </article>
+
+          
+          <article class="card animate delay-2">
+            <div class="card-header">
+              <div class="card-icon icon-web">💻</div>
+              <span class="card-badge">Débutant</span>
+              <h3>Développement Web</h3>
+              <p>HTML, CSS, JavaScript, React et Node.js. Créez des applications web modernes et responsives de A à Z.</p>
+            </div>
+            <div class="card-meta">
+              <span class="meta-item"><span class="meta-icon">⏱</span> 4 mois</span>
+              <span class="meta-item"><span class="meta-icon">📚</span> 14 modules</span>
+              <span class="meta-item"><span class="meta-icon">🏆</span> Certificat</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">Gratuit</span>
+              <a href="web.html" class="btn-card">Découvrir →</a>
+            </div>
+          </article>
+
+          
+          <article class="card animate delay-3">
+            <div class="card-header">
+              <div class="card-icon icon-cyber">🔒</div>
+              <span class="card-badge">Avancé</span>
+              <h3>Cybersécurité</h3>
+              <p>Sécurité des réseaux, ethical hacking, cryptographie et réponse aux incidents. Devenez expert en sécurité.</p>
+            </div>
+            <div class="card-meta">
+              <span class="meta-item"><span class="meta-icon">⏱</span> 6 mois</span>
+              <span class="meta-item"><span class="meta-icon">📚</span> 11 modules</span>
+              <span class="meta-item"><span class="meta-icon">🏆</span> Certificat</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">Gratuit</span>
+              <a href="cyber.html" class="btn-card">Découvrir →</a>
+            </div>
+          </article>
+
+          
+          <article class="card animate">
+            <div class="card-header">
+              <div class="card-icon icon-mkt">📱</div>
+              <span class="card-badge">Débutant</span>
+              <h3>Marketing Digital</h3>
+              <p>SEO, réseaux sociaux, publicité en ligne et e-commerce. Boostez la visibilité et les ventes en ligne.</p>
+            </div>
+            <div class="card-meta">
+              <span class="meta-item"><span class="meta-icon">⏱</span> 3 mois</span>
+              <span class="meta-item"><span class="meta-icon">📚</span> 8 modules</span>
+              <span class="meta-item"><span class="meta-icon">🏆</span> Certificat</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">Gratuit</span>
+              <a href="marketing.html" class="btn-card">Découvrir →</a>
+            </div>
+          </article>
+
+          
+          <article class="card animate delay-1">
+            <div class="card-header">
+              <div class="card-icon icon-cloud">☁️</div>
+              <span class="card-badge">Intermédiaire</span>
+              <h3>Cloud Computing</h3>
+              <p>AWS, Azure, GCP et DevOps. Déployez, gérez et sécurisez des infrastructures cloud à grande échelle.</p>
+            </div>
+            <div class="card-meta">
+              <span class="meta-item"><span class="meta-icon">⏱</span> 5 mois</span>
+              <span class="meta-item"><span class="meta-icon">📚</span> 9 modules</span>
+              <span class="meta-item"><span class="meta-icon">🏆</span> Certificat</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">Gratuit</span>
+              <a href="inscription.html" class="btn-card">S'inscrire →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="pourquoi" class="features-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Nos avantages</span>
+          <h2>Pourquoi choisir FormaPro ?</h2>
+          <p>Une plateforme pensée pour votre réussite professionnelle.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Programmes certifiants</h3>
+            <p>Obtenez un certificat reconnu par les entreprises partenaires à la fin de chaque formation.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">👨‍🏫</div>
+            <h3>Formateurs experts</h3>
+            <p>Apprenez auprès de professionnels actifs avec une expérience terrain significative.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h3>Projets pratiques</h3>
+            <p>Chaque module inclut des projets réels pour consolider vos compétences immédiatement.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>100% en ligne</h3>
+            <p>Accédez aux cours depuis n'importe quel appareil, à n'importe quelle heure.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Accompagnement</h3>
+            <p>Un tuteur personnel vous accompagne tout au long de votre parcours de formation.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>Insertion professionnelle</h3>
+            <p>Accès à notre réseau d'entreprises partenaires pour votre emploi ou stage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="testimonials-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="color:var(--accent)">Témoignages</span>
+          <h2 style="color:white">Ce que disent nos étudiants</h2>
+          <p style="color:rgba(255,255,255,0.6)">Ils ont transformé leur carrière grâce à nos formations.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>La formation IA m'a permis de décrocher un poste de Data Scientist en 3 mois. Le contenu est très complet et les projets pratiques m'ont vraiment préparé au monde professionnel.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AM</div>
+              <div>
+                <div class="author-name">Ahmed Mansouri</div>
+                <div class="author-role">Data Scientist @ TechCorp</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>Excellente formation en développement web ! J'ai créé mon premier site professionnel après seulement 2 mois. Les formateurs sont disponibles et pédagogues.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SR</div>
+              <div>
+                <div class="author-name">Sara Rachdi</div>
+                <div class="author-role">Développeuse Web Freelance</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>La formation cybersécurité est très pointue. J'ai obtenu ma certification et maintenant je travaille comme analyste SOC. Je recommande à 100%.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">KB</div>
+              <div>
+                <div class="author-name">Karim Benali</div>
+                <div class="author-role">Analyste SOC @ SecureNet</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section style="background:var(--white); text-align:center; padding:80px 24px;">
+      <div class="container">
+        <h2 style="font-family:var(--font-head);font-size:2.2rem;font-weight:800;color:var(--dark);margin-bottom:14px;">
+          Prêt à démarrer votre formation ?
+        </h2>
+        <p style="color:var(--text-light);font-size:1.05rem;margin-bottom:32px;">
+          Rejoignez plus de 500 étudiants qui ont déjà transformé leur carrière.
+        </p>
+        <a href="inscription.html" class="btn-primary" style="font-size:1rem;padding:16px 40px;">
+          🎓 S'inscrire gratuitement
+        </a>
+      </div>
+    </section>
+  </main>
+
+ 
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:12px;display:inline-flex;">
+            <div class="logo-icon">🎓</div>
+            Forma<span>Pro</span>
+          </a>
+          <p>Plateforme universitaire de formation en ligne aux métiers du numérique. Certifiée et reconnue.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn">🐦</a>
+            <a href="#" class="social-btn">💼</a>
+            <a href="#" class="social-btn">📸</a>
+            <a href="#" class="social-btn">▶️</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Formations</h4>
+          <ul>
+            <li><a href="ia.html">Intelligence Artificielle</a></li>
+            <li><a href="datascience.html">Data Science</a></li>
+            <li><a href="web.html">Développement Web</a></li>
+            <li><a href="cyber.html">Cybersécurité</a></li>
+            <li><a href="marketing.html">Marketing Digital</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#formations">Nos formations</a></li>
+            <li><a href="#pourquoi">À propos</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">📧 contact@formaproject.tn</a></li>
+            <li><a href="#">📞 +216 XX XXX XXX</a></li>
+            <li><a href="#">📍 Tunis, Tunisie</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2024 FormaPro — Projet Universitaire Développement Web</span>
+        <span>Fait avec ❤️ par l'équipe étudiante</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+
+</body>
+</html>
